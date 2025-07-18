@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background: #333 url("imagens/wallpaper002.jpg") center center / cover no-repeat fixed;
+}
+
+p {
+    background: linear-gradient(to bottom, black, red);
+    color: blue;
+}

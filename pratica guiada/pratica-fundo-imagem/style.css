@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("imagens/wallpaper001.jpg");
+}
+
+section {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}

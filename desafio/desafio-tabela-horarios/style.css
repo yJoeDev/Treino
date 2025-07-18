@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+table.coluna1 {
+    width: 400px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+}
+
+
+#m {
+    width: 212px;
+}
+
+#t {
+    width: 212px;
+}
+
+.cor1 {
+    background-color: lightblue;
+}
+
+ td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.coluna2 {
+    width: 400px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+}
+
+.cor2 {
+    background-color: yellow;
+}

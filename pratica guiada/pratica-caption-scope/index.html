@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Caption e Scope</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td, th {
+            font-weight: bolder;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        thead, tbody {
+            background-color: lightslategray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabelas de Precos da Mercearia XYZ</caption>
+        <thead>
+            <tr>
+                <th scope="col">Preco</th>
+                <th scope="col">Produto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>R$30,00</td>
+                <td>Martelo</td>
+            </tr>
+            <tr>
+                <td>R$50,00</td>
+                <td>Enchada</td>
+            </tr>
+            <tr>
+                <td>R$25,00</td>
+                <td>Alicate</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

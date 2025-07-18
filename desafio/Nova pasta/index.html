@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Medias</title>
+    <style>
+        table {
+            
+            font-family: 'Times New Roman', Times, serif;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        thead {
+            padding: 10px;
+            background-color: lightslategray;
+            color: white;
+        }
+        
+        
+        
+        .nome {
+            text-align: left;
+        }
+        .num1 {
+            text-align: center;
+        }
+       
+        .media {
+            text-align: right;
+        }
+
+        #altura {
+            height: 80px;
+        }
+
+        .a1 {
+            padding: 10px;
+            vertical-align: top;
+            text-transform: uppercase;
+        }
+        .b1 {
+            vertical-align: middle;
+        }
+        .c1 {
+            vertical-align: bottom;
+        }
+        .d1 {
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr id="altura">
+                <th class="a1">Aluno</th>
+                <th class="b1">Nota 1</th>
+                <th class="c1">Nota 2</th>
+                <th class="d1">Media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nome">Akiles</td>
+                <td class="num1">8</td>
+                <td class="num1">9</td>
+                <td class="media">8,5</td>
+            </tr>
+            <tr>
+                <td class="nome">Aline</td>
+                <td class="num1">6</td>
+                <td class="num1">7</td>
+                <td class="media">6,5</td>
+            </tr>
+            <tr>
+                <td class="nome">Tuany</td>
+                <td class="num1">9</td>
+                <td class="num1">6</td>
+                <td class="media">7,5</td>
+            </tr>
+            <tr>
+                <td class="nome">Bruno</td>
+                <td class="num1">3</td>
+                <td class="num1">8</td>
+                <td class="media">5,5</td>
+            </tr>
+            <tr>
+                <td class="nome">Jessica</td>
+                <td class="num1">9</td>
+                <td class="num1">9</td>
+                <td class="media">9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Aprovados com media &gt; 6.0</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

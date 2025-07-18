@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica efeito zebrado</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: lightgrey;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+        
+        .num {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Lista de Funcionários - Julho 2025</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Setor</th>
+                <th scope="col">Salario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fabia</td>
+                <td>Limpeza</td>
+                <td class="num">4</td>
+                <td class="num">2.000</td>
+            </tr>
+            <tr>
+                <td>luiz</td>
+                <td>Acogue</td>
+                <td class="num">2</td>
+                <td class="num">2.500</td>
+            </tr>
+            <tr>
+                <td>Fernado</td>
+                <td>Acogue</td>
+                <td class="num">2</td>
+                <td class="num">2.500</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Estoque</td>
+                <td class="num">7</td>
+                <td class="num">2.000</td> 
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>Gerente</td>
+                <td class="num">11</td>
+                <td class="num">8.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Funcionarios</th>
+                <td colspan="4" class="num">5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

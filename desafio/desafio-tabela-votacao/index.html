@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela de Votacao</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        td, th {
+            padding: 7px;
+            border: 1px solid black;
+        }
+
+        caption {
+            
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        thead {
+            background-color: grey;
+            color: white;
+        }
+
+        .partido {
+            text-align: left;
+        }
+
+        .votos {
+            text-align: center;
+        }
+
+        #caixa {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #maior {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Resultado da Eleição Municipal – Julho 2025</caption>
+        <thead>
+            <tr>
+                <th scope="col">Candidato</th>
+                <th scope="col" >Partido</th>
+                <th scope="col" >Votos 1º Turno</th>
+                <th scope="col">Votos 2º Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriel neves</td>
+                <td class="partido">PSDB</td>
+                <td class="votos">400</td>
+                <td class="votos">1400</td>
+            </tr>
+            <tr>
+                <td>Mariana Torres</td>
+                <td class="partido">PT</td>
+                <td class="votos">1000</td>
+                <td class="votos">1200</td>
+            </tr>
+            <tr>
+                <td>Marina Machado</td>
+                <td class="partido">UB</td>
+                <td class="votos">1200</td>
+                <td class="votos">1500</td>
+            </tr>
+            <tr id="maior">
+                <td>Edinaldo Marinho</td>
+                <td class="partido">PGHT</td>
+                <td class="votos">1300</td>
+                <td class="votos">1900</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Candidato eleito foi o mais votado no 2º turno.</th>
+                <td colspan="4" id="caixa">Edinaldo Marinho</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

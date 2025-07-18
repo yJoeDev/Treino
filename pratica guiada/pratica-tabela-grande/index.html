@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            background: grey;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .numeros {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><strong>Arroz</strong></td>
+                <td class="numeros">2</td>
+                <td class="num">R$ 5,00</td>
+            </tr>
+            <tr>
+                <td><strong>Feijao</strong></td>
+                <td class="numeros">4</td>
+                <td class="num">R$ 10,00</td>
+            </tr>
+            <tr>
+                <td><strong>Macarao</strong></td>
+                <td class="numeros">3</td>
+                <td class="num">R$ 7,00</td>
+            </tr>
+            <tr>
+                <td><strong>Oleo</strong></td>
+                <td class="numeros">6</td>
+                <td class="num">R$ 14,99</td>
+            </tr>
+            <tr>
+                <td><strong>Extrado de Tomate</strong></td>
+                <td class="numeros">3</td>
+                <td class="num">R$ 6,50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td class="numeros"><strong>180,5</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

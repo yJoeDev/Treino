@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabelas Departamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Cursos por Departamento - Universidade Exemplo</th>
+            </tr>
+            <tr>
+                <th scope="col">Curso</th>
+                <th scope="col">Codernador</th>
+                <th scope="col">Sala</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" colspan="3">Departamento Exatas</th>
+            </tr>
+            <tr>
+                <td>Matematica</td>
+                <td>Matias</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>Maria do Carmo</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" colspan="3">Departamento de Humanas</th>
+            </tr>
+            <tr>
+                <td>Historia</td>
+                <td>Marcio</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>Fernada</td>
+                <td>37</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

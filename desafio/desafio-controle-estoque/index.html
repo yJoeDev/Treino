@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio controle de estoque</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+
+        .num {
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Controle de Estoque - Julho 2025</caption>
+        <thead>
+            <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Valor Unitario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>29103</td>
+                <td>capa de celular</td>
+                <td class="num">9000</td>
+                <td>celular</td>
+                <td>R$15.00</td>
+            </tr>
+            <tr>
+                <td>1289</td>
+                <td>suporte para celular</td>
+                <td class="num">800</td>
+                <td>celular</td>
+                <td>R$20.00</td>
+            </tr>
+            <tr>
+                <td>84903</td>
+                <td>tripe</td>
+                <td class="num">600</td>
+                <td>celular</td>
+                <td>R$35.00</td>
+            </tr>
+            <tr>
+                <td>2910</td>
+                <td>lente de camera</td>
+                <td class="num">800</td>
+                <td>celular</td>
+                <td>R$25.00</td>
+            </tr>
+            <tr>
+                <td>21903</td>
+                <td>fone de ouvido</td>
+                <td class="num">7000</td>
+                <td>celular</td>
+                <td>R$10.00</td>
+            </tr>
+            <tr>
+                <td>21973</td>
+                <td>microfone</td>
+                <td class="num">1000</td>
+                <td>computador</td>
+                <td>R$100.00</td>
+            </tr>
+            <tr>
+                <td>78549</td>
+                <td>headset</td>
+                <td class="num">9000</td>
+                <td>computador</td>
+                <td>R$120.00</td>
+            </tr>
+            <tr>
+                <td>2039</td>
+                <td>Webcam</td>
+                <td class="num">628</td>
+                <td>computador</td>
+                <td>R$200.00</td>
+            </tr>
+            <tr>
+                <td>21903</td>
+                <td>munitor</td>
+                <td class="num">776</td>
+                <td>computador</td>
+                <td>R$550.00</td>
+            </tr>
+            <tr>
+                <td>2034</td>
+                <td>suporte de munitor</td>
+                <td class="num">802</td>
+                <td>computador</td>
+                <td>R$150.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">Total de produtos: 10</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
