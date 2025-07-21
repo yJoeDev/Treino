@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio-colgrop</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 1.4em;
+            padding: 4px;
+        }
+
+        th, td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.dia {
+            background-color: lightgrey;
+            color: lightblue;
+        }
+
+        col.atividade {
+            background-color: lightblue;
+            color: black;
+        }
+
+        col.local {
+            background-color: lightcoral;
+            color: black;
+        }
+
+        col.horario {
+            background-color: lightyellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercio-colgrop</h1>
+    <table>
+        <colgroup>
+            <col class="dia">
+            <col class="atividade">
+            <col class="local">
+            <col class="horario">
+        </colgroup>
+        <caption>Cronograma de Atividades</caption>
+        <thead>
+            <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Atividade</th>
+                <th scope="col">Local</th>
+                <th scope="col">Horario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>segunda</td>
+                <td>Corrida</td>
+                <td>Parque</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td>Terca</td>
+                <td>Musculacao</td>
+                <td>Academia</td>
+                <td>19:00</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>Natacao</td>
+                <td>Psicina do Ginasio</td>
+                <td>14:00</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td>Trilinha</td>
+                <td>Parque Florestal</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>Skate</td>
+                <td>Pista de Skate</td>
+                <td>15:00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
