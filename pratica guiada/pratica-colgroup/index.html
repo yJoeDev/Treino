@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada Colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.col-dia {
+            background-color: yellow;
+        }
+
+        col.col-grupo {
+            background-color: lightblue;
+        }
+
+        col.col-turno {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="col-dia">
+            <col class="col-grupo" span="2">
+            <col class="col-turno">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Materia</th>
+                <th scope="col">Professor</th>
+                <th scope="col">Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20</td>
+                <td>Matematica</td>
+                <td>Prof.Maria</td>
+                <td>Manha</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Portugues</td>
+                <td>Prof.joao</td>
+                <td>Manha</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Fisica</td>
+                <td>Prof.Ana</td>
+                <td>amanha</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Redacao</td>
+                <td>Pro.Joao</td>
+                <td>Manha</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

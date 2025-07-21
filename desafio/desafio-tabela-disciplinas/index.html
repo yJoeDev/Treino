@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabela Displinas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        thead {
+            background-color: grey;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+
+        .exatas {
+            background-color: lightblue;
+        }
+
+        .humanas {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Aulas da Semana</caption>
+        <thead>
+            <tr>
+                <th scope="row" colspan="4">Aulas</th>
+            </tr>
+            <tr>
+                <th scope="col">Disciplina</th>
+                <th scope="col">Professor</th>
+                <th scope="col">Sala</th>
+                <th scope="col">turnos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="4" scope="rowgroup" class="exatas">Exatas</th>
+            </tr>
+            <tr class="exatas">
+                <td>matematica</td>
+                <td>Daniel</td>
+                <td>121</td>
+                <td>Matutino</td>
+            </tr>
+            <tr class="exatas">
+                <td>Algebra</td>
+                <td>magali</td>
+                <td>98</td>
+                <td>Matutino</td>
+            </tr>
+            <tr class="exatas">
+                <td>Biologia</td>
+                <td>Osvaldo</td>
+                <td>190</td>
+                <td>vespertino</td>
+            </tr>
+            <tr class="exatas">
+                <td>Quimica</td>
+                <td>Mariana</td>
+                <td>89</td>
+                <td>Noturno</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="rowgroup" class="humanas">humanas</th>
+            </tr>
+            <tr class="humanas">
+                <td>Historia</td>
+                <td>Jorge</td>
+                <td>214</td>
+                <td>Matutino</td>
+            </tr>
+            <tr class="humanas">
+                <td>Filosofia</td>
+                <td>Ana</td>
+                <td>79</td>
+                <td>Vespertino</td>
+            </tr>
+            <tr class="humanas">
+                <td>Portugues</td>
+                <td>Jose</td>
+                <td>90</td>
+                <td>Noturno</td>
+            </tr>
+            <tr class="humanas">
+                <td>Redacao</td>
+                <td>Jose</td>
+                <td>90</td>
+                <td>Noturno</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
