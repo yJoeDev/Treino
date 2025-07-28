@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio iframe local</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            text-align: justify;
+            color: white;
+            
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+
+        iframe {
+            width: 400px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>noticias / biografia </h1>
+    </header>
+    <div class="container">
+        <iframe src="noticias.html" ></iframe>
+        <iframe src="biografia.html" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
