@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevegacao iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        iframe {
+            width: 97vw;
+            height: 250px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: red;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: yellow;
+            padding: 10px;
+            border: 1px dashed red;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: red;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Nevegando em iframes</h1>
+    <a href="pagina01.html" target="quadro">Primeira Pagina</a>
+    <a href="pagina02.html" target="quadro">Segunda Pagina</a>
+    <a href="pagina03.html" target="quadro">Terceira Pagina</a>
+
+    <iframe src="" name="quadro">
+        <p>Infelizmente seu navegador nao e conpativel com isso.</p>
+    </iframe>
+</body>
+</html>
