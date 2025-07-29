@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exércio iframe srcdoc</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-variant: small-caps;
+            text-shadow: 1px 1px 1px black;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 4px 6px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quem sou eu ?</h1>
+    <iframe srcdoc="
+    <style>
+        body{font-family:arial, sans-serif; background-color:white;}
+        h2 {text-align:center; text-shadow:1px 1px 1px black;}
+        p{text-align:left;}
+    </style>
+    <h2>Sobre mim</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quam deleniti amet ratione, tempore nam pariatur corrupti nihil similique, sed quisquam exercitationem quae explicabo beatae perspiciatis harum mollitia, cum architecto.</p>"></iframe>
+</body>
+</html>
