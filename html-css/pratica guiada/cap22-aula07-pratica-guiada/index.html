@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada sandbox e referrerpolicy</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            width: 90vw;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando iframes com sandbox e referrerpolicy</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam optio placeat sint doloribus pariatur aliquam quia rem inventore nostrum. Officia ipsum nulla exercitationem, excepturi laboriosam ea voluptas voluptate aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui commodi cupiditate eos dolorum alias exercitationem asperiores natus, nobis placeat esse nam optio molestias distinctio aperiam sint ad error illo repudiandae!</p>
+
+    <iframe src="https://www.wikipedia.org"  sandbox="allow-scripts allow-forms" referrerpolicy="no-referrer"></iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam assumenda quo fugit, doloribus optio inventore ducimus explicabo? Amet repellat at odio praesentium animi eaque, voluptatibus officia harum dolor qui doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum labore, voluptatibus doloremque quibusdam explicabo temporibus iure laudantium sequi maxime perspiciatis eveniet eum earum error unde ut, cum illo culpa!</p>
+</body>
+</html>
