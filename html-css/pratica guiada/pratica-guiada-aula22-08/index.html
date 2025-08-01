@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right, lightblue, transparent);
+            color: darkblue;
+            display: block;
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 94vw;
+            height: 60vh;
+            border: none;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus iframe</h1>
+    <iframe src="https://developer.mozilla.org" sandbox="allow-same-origin allow-scripts" referrerpolicy="no-referrer">
+        <p>infezmente seu navegador nao e compativel com isso...</p>
+    </iframe>
+</body>
+</html>
