@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exércio Formulário</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 2.3em;
+        }
+
+        form {
+            padding: 20px;
+            border: 1px solid red;
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+
+        label {
+            color: red;
+        }
+
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestao filmes</h1>
+    <form action="filme.php" autocomplete="off">
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="filme">Nome do Filme:</label>
+        <input type="text" name="filme" id="filme"><br>
+        <label for="genero">Genero do Filme:</label>
+        <input type="text" name="genero" id="genero"><br>
+        <input type="submit" value="Assistir">
+    </form>
+</body>
+</html>
