@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada GET e POST</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            color: red;
+        }
+
+        form {
+            padding: 10px;
+            border: 1px solid red;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+        }
+
+        label {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fomulario da Familia</h1>
+    <form action="familia.php" method="post" autocomplete="off">
+    <label for="nome">Nome Completo:</label><br>
+    <input type="text" name="nome" id="nome"><br>
+    <label for="familia">Nome da familia:</label><br>
+    <input type="text" name="familia" id="familia"><br>
+    <label for="num">Numero de integrandes:</label><br>
+    <input type="text" name="num" id="num"><br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
