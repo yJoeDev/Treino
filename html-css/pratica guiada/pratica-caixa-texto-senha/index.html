@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada caixa senha</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        padding: 10px;
+        color: grey;
+        font-family: cursive;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+
+    form {
+        border: 2px dashed black;
+        border-radius: 10px;
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        background-color: lightblue;
+    }
+
+    input {
+        padding: 3px;
+        margin: 4px;
+    }
+</style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="use">Usuário: </label><br>
+        <input type="text" name="use" id="use" required minlength="8" maxlength="10" size="15" placeholder="Nome de Usuario" autocomplete="username"><br>
+        <label for="email">Email: </label><br>
+        <input type="email" name="email" id="email" required maxlength="25" size="15" placeholder="Email" autocomplete="email"><br>
+        <label for="senha">Senha: </label><br>
+        <input type="password" name="senha" id="senha" required minlength="6" maxlength="20" placeholder="Senha" size="15" autocomplete="current-password"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar os campos">
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exércicio usuário reset</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: grey;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: cadetblue;
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            font-weight: normal;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.493);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuario!</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="name">Nome: </label><br>
+        <input type="text" name="name" id="name" required minlength="10" maxlength="15" placeholder="seu nome..." size="15" autocomplete="name"><br>
+        <label for="email">Email: </label><br>
+        <input type="email" name="email" id="email" required minlength="10" maxlength="25" placeholder="seu email..." size="15" autocomplete="email"><br>
+        <label for="sen">Senha:</label><br>
+        <input type="password" name="sen" id="sen" required minlength="7" maxlength="14" placeholder="sua senha nova..." size="15" autocomplete="new-password"><br>
+        <label for="confsen">Confirma senha: </label><br>
+        <input type="password" name="confsen" id="confsen" required minlength="7" maxlength="14" placeholder="Confirme sua senha..." size="15" autocomplete="new-password"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
