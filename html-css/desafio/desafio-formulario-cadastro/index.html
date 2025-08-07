@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio formulario caddastro</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: grey;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            font-size: 3em;
+            font-family: monospace;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        form {
+            padding: 10px;
+            border: 1px solid black;
+            max-width: 400px;
+            text-align: center;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.603);
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="name">Nome: </label><br>
+        <input type="text" name="name" id="name" required minlength="7" maxlength="10" placeholder="nome completo" size="16" autocomplete="name"><br>
+        <label for="use">Usuario: </label><br>
+        <input type="text" name="use" id="use" required minlength="7" maxlength="10" placeholder="Nome de Usuario" size="16" autocomplete="username"><br>
+        <label for="email">Email: </label><br>
+        <input type="email" name="email" id="email" required  placeholder="enderoco de email" size="16" autocomplete="email"><br>
+        <label for="sen">Senha: </label><br>
+        <input type="password" name="sen" id="sen" minlength="8" maxlength="16" placeholder="Senha" size="16"  autocomplete="new-password"><br>
+        <label for="confsen">Confirme sua senha: </label><br>
+        <input type="password" name="confsen" id="confsen" minlength="8" maxlength="16" placeholder="Confirmacao de senha" size="16" autocomplete="new-password"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
