@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada form-email-tel</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.616);
+            background-color: lightblue;
+        }
+
+        legend {
+            font-size: 1.4em;
+            font-weight: normal;
+            font-style: italic;
+            color: red;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+        }
+
+        input {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.596);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Inforacoes de Contato</legend>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="seu e-mail...">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="^(\d{2}\)\d[0-9]{4,5}-\d[0-9]{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
