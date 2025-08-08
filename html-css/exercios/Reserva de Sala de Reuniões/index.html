@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio Reservas de Sala de Reunioes</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: darkcyan;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: fantasy;
+            font-weight: normal;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.514);
+            background-color: black;
+        }
+
+        input {
+            padding: 4px;
+            margin: 8px;
+            border-radius: 4px;
+            border: 3px dashed red;
+            box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.589);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Sala para Reunioes</h1>
+    <form action="#" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Numero da Sala: </label>
+            <input type="number" name="numero" id="inum" required value="5" min="1" max="10" step="1">
+        </p>
+
+        <p>
+            <label for="imes">Mes da Reserva: </label>
+            <input type="month" name="mes" id="imes" required value="2025-08" min="2025-08" max="2025-10">
+        </p>
+
+        <p>
+            <label for="idata">Data da Reserva: </label>
+            <input type="date" name="data" id="idata" required value="2025-08-13" min="2025-08-13" max="2025-10-07">
+        </p>
+
+        <p>
+            <label for="ihora">Horario de Inicio: </label>
+            <input type="time" name="ihora" id="ihora" required value="09:00" min="07:00" max="20:00" step="1800">
+        </p>
+
+        <p>
+            <label for="thora">Horario de Termino: </label>
+            <input type="time" name="thora" id="thora" required value="10:00" min="07:30" max="21:00" step="1800">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

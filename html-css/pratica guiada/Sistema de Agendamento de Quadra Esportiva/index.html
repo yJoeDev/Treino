@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada Quadro Esportivo</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: lightsalmon;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            color: darkorchid;
+            font-variant: small-caps;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+            background-color: white;
+        }
+
+        input {
+            margin: 6px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.562);
+            color: blue;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agendamento de Quadra</h1>
+    <form action="#" method="get">
+        <p>
+            <label for="inum">Numero da Quadra: </label>
+            <input type="number" name="num" id="inum" required value="1" min="1" max="6" step="1">
+        </p>
+
+        <p>
+            <label for="mes">Mes do Agendamento: </label>
+            <input type="month" name="mes" id="mes" required value="2025-08" min="2025-08" max="2026-02">
+        </p>
+
+        <p>
+            <label for="data">Data do Agendamento: </label>
+            <input type="date" name="data" id="data" required min="2025-08-08" max="2026-02-08">
+        </p>
+
+        <p>
+            <label for="hora">Horario da Partida: </label>
+            <input type="time" name="hora" id="hora" required value="08:00" min="08:00" max="22:00" step="3600">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
