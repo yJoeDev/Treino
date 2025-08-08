@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada agendamento </title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            padding: 10px;
+            font-size: 2.2em;
+            text-align: center;
+            font-family: cursive;
+            color: darkcyan;
+        }
+
+        form {
+            padding: 10px;
+            max-width: 400px;
+            text-align: center;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.562);
+            background-color: white;
+        }
+
+        input {
+            margin: 3px;
+            padding: 3px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+        }
+    </style>
+</head>
+<body>
+    <h1>Agende sua consulta medica</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required minlength="6" maxlength="10" placeholder="seu nome"
+            size="10" autocomplete="name">
+            <label for="num">Convenio: </label>
+            <input type="number" name="num" id="num" min="1"
+            max="20" value="1" step="1">
+        </p>
+
+        <p>
+            <label for="idata">Dia: </label>
+            <input type="date" name="data" id="idata" value="2025-01-01" min="2025-01-01" max="2026-07-20">
+            <label for="imes">Mes: </label>
+            <input type="month" name="mes" id="imes" min="2025-01" max="2026-07" value="2025-01">
+        </p>
+        
+        <p>
+            <label for="ihora">Horario da consulta: </label><br>
+            <input type="time" name="Horario" id="ihora" min="07:00" max="23:00" step="1800" value="08:00">
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+</body>
+</html>
