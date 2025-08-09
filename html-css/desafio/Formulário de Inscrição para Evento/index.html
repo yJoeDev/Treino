@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio formulario de escricao para eventos</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 2.5em;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555);
+        }
+
+        legend {
+            font-size: 1.4em;
+            font-weight: normal;
+            color: blueviolet;
+        }
+
+        input {
+            margin: 5px;
+            padding: 6px;
+            border-radius: 3px;
+            border: 2px solid red;
+            box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.363);
+        }
+    </style>
+</head>
+<body>
+    <h1>Baile da Tequila</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Cadastro baile da tequila</legend>
+            <p>
+                <label for="nome">participante:</label>
+                <input type="text" name="nome" id="nome" required minlength="5" maxlength="40" placeholder="Nome do participante" size="20" autocomplete="name">
+            </p>
+            <p>
+                <label for="inum">Igresso: </label>
+                <input type="number" name="num" id="inum" required min="1" max="30" value="5">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required placeholder="seu E-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxxx" pattern="^\d(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+            </p>
+            <p>
+                <label for="icpf">CPF: </label>
+                <input type="text" name="cpf" id="icpf" required placeholder="xxx.xxx.xxx.xx" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
