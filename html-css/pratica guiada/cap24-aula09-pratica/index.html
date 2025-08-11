@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica guiada</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: blue;
+            font-variant: small-caps;
+        }
+
+        fieldset {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+        }
+
+        legend {
+            font-size: 1.3em;
+        }
+
+        input {
+            margin: 7px;
+        }
+
+        p.enviar {
+            text-align: center;
+            padding: 10px;
+        }
+
+        p.enviar > input {
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+        }
+    </style>
+</head>
+<body>
+    <h1>Configurações Visuais</h1>
+    <form action="cadastro.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Configurações Visuais</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel">Nivel de Satisfacao: </label>
+                <input type="range" name="nivel" id="inivel" min="0" max="100" step="1" value="1">
+            </p>
+            <p>
+                <label for="ifoto">Escolha sua Foto: </label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+
+        <p class="enviar">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
