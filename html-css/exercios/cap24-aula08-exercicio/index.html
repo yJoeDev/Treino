@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Hábitos</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.3em;
+            font-weight: normal;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
+        }
+
+        legend {
+            font-size: 1.5em;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+        }
+
+        label { 
+            font-size: 1.2em;
+            font-weight: lighter;
+        }
+        
+        input {
+            margin: 4px;
+        }
+
+        p {
+            text-align: center;
+            padding: 10px;
+        }
+
+        p > input {
+            padding: 7px;
+            box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pesquisa de Hábitos</h1>
+    <form action="pesquisa.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Atividades Fisicas</legend>
+            <label>
+                <input type="checkbox" name="atf" id="bicicleta" value="bicicleta">
+                Bicicleta
+            </label>
+            <label>
+                <input type="checkbox" name="atf" id="correr" checked value="correr">
+                Correr
+            </label>
+            <label>
+                <input type="checkbox" name="atf" id="musculacao" value="musculacao">
+                Musculacao
+            </label>
+            <label>
+                <input type="checkbox" name="atf" id="caminha" value="caminha">
+                Caminhar
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horario para a atividade fisica</legend>
+            <label>
+                <input type="radio" name="hora" id="manha" value="manha">
+                Manha
+            </label>
+            <label>
+                <input type="radio" name="hora" id="tarde" value="tarde">
+                Tarde
+            </label>
+            <label>
+                <input type="radio" name="hora" id="noite" checked value="noite">
+                Noite
+            </label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
