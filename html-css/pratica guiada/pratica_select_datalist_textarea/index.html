@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica select,datalist e textarea</title>
+</head>
+<body>
+    <h1>Escolha suas Opcoes</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="ipais">Pais</label>
+            <select name="pais" id="ipais">
+
+                <option value="" selected>--- Escolha um Pais ----</option>
+                <optgroup label="Primeiros pais">
+                    <option value="BRA">Brasil</option>
+                    <option value="EUA">Estados Unidos</option>
+                    <option value="ALE">Alemanha</option>
+                </optgroup>
+
+                <optgroup label="Segundos pais">
+                    <option value="ARG">Argentina</option>
+                    <option value="AUS">Australia</option>
+                    <option value="CRO">Croacia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="icarros">Carros</label>
+            <input type="text" name="carros" id="icarros" list="carros">
+            <datalist id="carros">
+                <option value="FR">Ferrari</option>
+                <option value="LB">Lamborguine</option>
+                <option value="CM">Camaro</option>
+                <option value="SK">Skyline</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

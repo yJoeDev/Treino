@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio select,datalist e textarea</title>
+</head>
+<body>
+    <h1>Pizzaria Donatelo</h1>
+    <form action="cadastro-pizzaria.php" method="post" autocomplete="on">
+        <p>
+            <label for="isabor">Sabor da pizza:</label>
+            <select name="sabor" id="isabor">
+                <option value="" selected>--- Escolha o sabor da pizza ---</option>
+                <optgroup label="Mais vendidas">
+                    <option value="4-queijos">4-Queijos</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="peperone">Peperone</option>
+                    <option value="franco-com-catuperi">Franco com Catuperi</option>
+                </optgroup>
+
+                <optgroup label="promocao">
+                    <option value="atum">Atum</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango">Frango</option>
+                    <option value="pimentar">Pimenta</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="itamanho">Tamanho da pizza</label>
+            <input type="text" name="tamanho" id="itamanho" list="tamanho">
+            <datalist id="tamanho">
+                <option value="PQ">Pequena</option>
+                <option value="MD">Media</option>
+                <option value="GD">Grande</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iobs">Observacoes sobre o pedido</label><br>
+            <textarea name="obs" id="iobs" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
