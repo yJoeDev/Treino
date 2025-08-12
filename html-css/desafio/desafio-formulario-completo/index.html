@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio formulario completo</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 2.3em;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            padding: 10px;
+            text-align: left;
+            border: 2px dashed black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+        }
+
+        div.modo {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border: 2px dashed black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+        }
+
+
+        legend {
+            text-align: center;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        input {
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalize seu Perfil</h1>
+    <form action="cadastro.php" method="post" autocomplete="on" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Perfil</legend>
+            <label>
+                Cor do Perfil
+                <input type="color" name="cor"><br>
+            </label>
+            <label>
+                Foto de Perfil 
+                <input type="file" name="foto"><br>
+            </label>
+            <label>
+                Tamanho da Fonte
+                <input type="range" name="font" min="1" max="10" step="1" value="5">
+            </label>
+        </fieldset>
+        <fieldset class="preferencias">
+            <legend>Preferencias</legend>
+            <label>
+                <input type="checkbox" name="notifica" checked value="notificar">
+                 Ativar Notificacoes
+            </label>
+            <label>
+                <input type="checkbox" name="fotopf" value="fotopf">
+                Ocultar foto de perfil
+            </label>
+            <label>
+                <input type="checkbox" name="pv" value="pv">
+                Perfil Privado
+            </label>
+        </fieldset>
+            <div class="modo">
+                <label>
+                        <input type="radio" name="modo" checked value="claro">
+                        layout claro
+                    </label>
+                    <label>
+                        <input type="radio" name="modo" value="escuro">
+                        Layout Escuro
+                    </label>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </div>
+    </form>
+</body>
+</html>
