@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio calculando imc</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" oninput="calcIMC()">
+        <label>
+            Seu peso:
+            <input type="number" name="peso" id="ipeso">
+        </label>
+
+        <label><br>
+            Sua Altura:
+            <input type="number" name="altura" id="ialtura" step="0.01">
+        </label>
+
+        <p>
+            <output id="resultado">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calcIMC() {
+            resultado.innerHTML = Number (ipeso.value) / Number (ialtura.value)
+        }
+    </script>
+</body>
+</html>
