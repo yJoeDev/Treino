@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio config perfil</title>
+    <style>
+        body {
+            background-color: darkgrey;
+            color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border: 2px dashed darkblue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.548);
+        }
+
+        legend {
+            font-size: 1.3em;
+            text-align: center;
+            margin: 5px;
+            font-weight: normal;
+            color: darkolivegreen;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+        }
+
+        input {
+            margin: 5px;
+            padding: 3px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p > input {
+            padding: 10px;
+        }
+
+        p > input:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on" enctype="multipart/form-data">
+         <fieldset>
+            <legend>Personalise seu perfil</legend>
+            <label>
+                <input type="checkbox" name="notificoes">
+                Ativar notificacoes
+            </label>
+
+            <label>
+                <input type="checkbox" name="publico">
+                Perfil publico
+            </label>
+
+            <label>
+                <input type="checkbox" name="ocultar">
+                Ocultar perfil
+            </label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Tema</legend>
+            <label>
+                <input type="radio" name="tema" value="claro" checked >
+                Tema Claro
+            </label>
+
+            <label>
+                <input type="radio" name="tema" value="escuro">
+                Tema Escuro
+            </label>
+
+            <label>
+                <input type="radio" name="tema" value="sistema">
+                Sistema
+            </label>
+         </fieldset>
+
+         <fieldset>
+            <legend>Idioma Preferido</legend>
+            <label for="idioma">Idioma</label>
+            <select name="idioma" id="idioma">
+                <optgroup label="Linguas eropeias">
+                    <option value="ES">Catlao</option>
+                    <option value="GA">galego</option>
+                    <option value="POR">Mirandes</option>
+                </optgroup>
+                <optgroup label="Linguas asiaticas">
+                    <option value="JP" selected>Japones</option>
+                    <option value="CO">Coreano</option>
+                    <option value="CHI">Chines</option>
+                </optgroup>
+            </select>
+         </fieldset>
+
+         <fieldset>
+            <legend>Interesses</legend>
+            <label for="interessest">Quais sao seus intereces:</label><br>
+            <input type="text" name="interesses" id="interessest" list="int">
+            <datalist id="int">
+                    <option value="FT">Futebol</option>
+                    <option value="VL">Volei</option>
+                    <option value="BS">Basquete</option>
+                    <option value="TS">Tenis de Mesa</option>
+                    <option value="M">Musica</option>
+                    <option value="C">Cinema</option>
+                    <option value="S">Series</option>
+                    <option value="F">Filmes</option>
+            </datalist>
+
+            <label><br>
+            Comentarios: <br>
+            <textarea name="mensagem" id="msg" cols="30" rows="10"></textarea>
+            </label>
+            
+         </fieldset>
+         
+         <fieldset>
+            <legend>Foto de perfil e outros</legend>
+            <label>
+                Foto de Perfil
+                <input type="file" name="foto" accept="image/*">
+            </label>
+
+            <label><br>
+                <input type="color" name="cor" value="#ff00f8">
+                Cor do fundo
+            </label>
+
+            <label><br>
+                Tamanho da fonte
+                <input type="range" name="fonte" min="1" max="100" step="1" value="50">
+            </label>
+         </fieldset>
+
+         <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+         </p>
+    </form>
+</body>
+</html>
