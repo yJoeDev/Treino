@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+ main a {
+    display: none;
+ }
+
+ article::after {
+    content: 'acesse esse artico atraves da pagina www.exemplo.com';
+ }
