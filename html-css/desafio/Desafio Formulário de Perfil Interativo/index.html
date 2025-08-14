@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil interativo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.493);
+        }
+
+        legend {
+            font-size: 1.3em;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.397);
+        }
+
+        input {
+            text-align: center;
+            margin: 5px;
+            padding: 4px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px rgba(173, 216, 230, 0.74);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p > input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on" enctype="multipart/form-data" oninput="calcular()">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Ano do Nascimento:
+                <input type="number" name="ano" id="iano" min="1900" max="2025" placeholder="Ano"><br>
+                <output id="iidade">0</output>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Medidas</legend>
+            <label>
+                Seu peso:
+                <input type="number" name="peso" id="ipeso" placeholder="seu peso aqui">
+            </label>
+            <label><br>
+                Sua Altura:
+                <input type="number" name="altura" id="ialtura" step="0.01" placeholder="sua altura aqui"><br>
+            </label>
+            <output id="resultado">0</output>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label>
+                Ativar notificacoes
+                <input type="checkbox" name="ntf" id="intf" value="ativar" checked>
+            </label>
+            <label>
+                Perfil Publico
+                <input type="checkbox" name="pfp" id="ipfp" value="perfilp">
+            </label>
+            <label>
+                Ocultar Perfil
+                <input type="checkbox" name="oc" id="ioc" value="perfilo">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Tema</legend>
+            <label>
+                Tema Claro
+                <input type="radio" name="tema" value="claro">
+            </label>
+            <label>
+                Tema Escuro
+                <input type="radio" name="tema" value="escuro">
+            </label>
+            <label>
+                Sistema
+                <input type="radio" name="tema" value="sistema">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Foto de Perfil</legend>
+            <label>
+                <input type="file" name="foto" id="ifoto" accept="image/*">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Favorito Idioma</legend>
+            <label for="iidioma">
+                <select name="idioma" id="iidioma">
+                    <optgroup label="mais usados">
+                        <option value="BR" selected>Portugues</option>
+                        <option value="IN">Ingles</option>
+                        <option value="JP">Japones</option>
+                    </optgroup>
+                    <optgroup label="menos usados">
+                        <option value="Al">Alemao</option>
+                        <option value="CHI">Chines</option>
+                        <option value="RU">Russo</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Interesses</legend>
+            <label for="iinteresses">Quais sao seus interesses: </label><br>
+            <input type="text" name="interesses" id="iinteresses" list="list" placeholder="Seus Interesses"><br>
+            <datalist id="list">
+                <option value="MS" selected>Musica</option>
+                <option value="CA">Cantar</option>
+                <option value="TC">Tocar um Instrumento</option>
+                <option value="LR">ler</option>
+                <option value="SP">Esportes</option>
+            </datalist>
+            <label for="CM">Deixe seu comentario!</label><br>
+            <textarea name="comentario" id="CM" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcular() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = (atual) - Number(iano.value)
+
+            resultado.innerHTML = Number (ipeso.value) / (Number(ialtura.value)**2)
+        }
+    </script>
+</body>
+</html>
