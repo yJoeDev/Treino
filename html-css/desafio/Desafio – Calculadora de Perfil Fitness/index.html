@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Calcular perfil fitness</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+            padding: 10px;
+        }
+
+        legend {
+            font-size: 1.4em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
+        }
+
+        input {
+            margin: 4px;
+            padding: 5px;
+            border: 2px dashed blue;
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px rgba(0, 139, 139, 0.329);
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        p > input:hover {
+            color: blue;
+            background-color: lightblue;
+            box-shadow: 2px 2px 5px rgba(0, 139, 139, 0.479);
+            transform: translate(-5%, -5%);
+            transition: color .3s, background-color .3s, box-shadow .5s, transform .5s;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on" enctype="multipart/form-data" oninput="calcular()">
+        <fieldset>
+            <legend>Perfil</legend>
+            <label>
+                Nome: 
+                <input type="text" name="nome" id="inome" required minlength="3" maxlength="10" placeholder="nome completo" autocomplete="name">
+            </label>
+            <label><br>
+                E-mail:
+                <input type="email" name="email" id="iemail" placeholder="xxxx@xxxx" autocomplete="email">
+            </label>
+            <label><br>
+                Sua foto
+                <input type="file" name="foto" id="ifoto" accept="image/*">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Idade</legend>
+            <label>
+                Ano de nascimento:
+                <input type="number" name="ano" id="iano" min="1900" max="2025" placeholder="Ano"><br>
+                <output id="iidade">0</output>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Seu IMC</legend>
+            <label>
+                Seu peso: 
+                <input type="number" name="peso" id="ipeso" placeholder="Qual seu peso?"><br>
+            </label>
+
+            <label>
+                Sua altura:
+                <input type="number" name="altura" id="ialtura" step="0.01" placeholder="Qual e sua altura?"><br>
+            </label>
+            <output id="resultado">0</output>
+        </fieldset>
+
+        <fieldset>
+            <legend>Treino</legend>
+            <label>
+                Musculacao
+                <input type="checkbox" name="musculacao" id="imusculacao" value="musculacao" checked>
+            </label>
+            <label>
+                Cardio
+                <input type="checkbox" name="cardio" id="icardio" value="cardio">
+            </label>
+            <label>
+                Yoga
+                <input type="checkbox" name="yoga" id="iyoga" value="yoga">
+            </label>
+            <label>
+                Luta
+                <input type="checkbox" name="luta" id="iluta" value="luta">
+            </label>
+
+            <label><br>
+                Atividades favoritas: 
+                <input type="text" name="favoritos" id="ifavoritos" list="listf" placeholder="favoritas">
+                <datalist id="listf">
+                <option value="CA" selected>Corrida</option>
+                <option value="NA">Natacao</option>
+                <option value="CI">Ciclismo</option>
+            </datalist>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dieta</legend>
+            <label>
+                Vegetariana
+                <input type="radio" name="dieta" value="vegetariana">
+            </label>
+            <label>
+                Carnivora
+                <input type="radio" name="dieta" value="carnivora">
+            </label>
+            <label>
+                Balanceada
+                <input type="radio" name="dieta" value="balanceada" checked>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Freguencia</legend>
+            <label>
+                <select name="freguencia" id="ifreguencia">
+                    <optgroup label="Semanal">
+                        <option value="1x">1x por semana</option>
+                        <option value="2x">2x por semana</option>
+                        <option value="3x">3x por semana</option>
+                    </optgroup>
+                    <optgroup label="Mensal">
+                        <option value="4x">4x por mes</option>
+                        <option value="8x">8x por mes</option>
+                        <option value="12">12x por mes</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Satisfacao</legend>
+            <label>
+                <input type="range" name="nivel" id="inivel" min="0" max="100" step="1"><br>
+                <output id="iinivel">0</output>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <label>
+                <textarea name="comentarios" id="icomentarios" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+    </form>
+
+    <script>
+        function calcular() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = (atual) - Number(iano.value)
+
+            resultado.innerHTML = Number(ipeso.value) / (Number (ialtura.value)**2)
+
+            iinivel.innerHTML = Number (inivel.value)
+        }
+    </script>
+</body>
+</html>
