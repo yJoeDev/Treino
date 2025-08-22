@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: lightblue;
+    color: white;
+}
+
+span#burguer {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+span#burguer:hover {
+    color: yellow;
+}
+
+menu {
+    display: none;
+    background-color: white;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+}
+
+menu > ul > li > a:hover {
+    background-color: lightgray;
+    color: darkcyan;
+}
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        border-radius: 10px;
+        margin: 0 5px;
+    }
+}
