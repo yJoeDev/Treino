@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: lightblue;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    padding: 10px;
+}
+
+
+.container {
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90vw;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+.imagem {
+    background: url('imagens/foto-ping.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    display: block;
+    margin: 10px;
+}
+
+.text {
+    text-align: center;
+    padding: 10px;
+}
+
+.text h2 {
+    padding: 5px;
+    font-size: 2em;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: width 1s, height 2s;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .container {
+        position: relative;
+        max-width: 950px;
+    }
+
+    .text {
+        position: absolute;
+        top: 13%;
+        float: left;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+        margin-left: 16px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .imagem {
+        float: right;
+        width: 50%;
+    }
+}
