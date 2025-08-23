@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(110, 12, 12, 0.767);
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: lightcoral;
+}
+
+img {
+    display: block;
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    border:1px solid black;
+    padding: 10px;
+    overflow: hidden;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+}
+
+div#curitiba {
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    background-color: white;
+}
+
+div#curitiba:hover {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.514);
+    transform: translate(0%, -2%);
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition-timing-function: ease;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.container h2 {
+    font-size: 2em;
+    padding: 10px;
+    color: lightcoral;
+}
+
+.container p {
+    font-size: 1.2em;
+    padding: 10px;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+div#corinthias {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    background-color: white;
+    margin-top: 10px;
+}
+
+div#corinthias h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.623), white);
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div#corinthias p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+div#corinthias:hover {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.514);
+    transform: translate(0%, -2%);
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition-timing-function: linear;
+}
+
+div#saopaulo {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    background-color: white;
+    margin-top: 10px;
+}
+
+div#saopaulo h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.575), rgba(0, 0, 0, 0.459));
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div#saopaulo p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+div#saopaulo:hover {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.514);
+    transform: translate(0%, -2%);
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    img {
+        float: right;
+        padding: 10px;
+    }
+
+    
+}
