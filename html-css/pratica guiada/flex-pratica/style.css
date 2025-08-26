@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.container {
+    display: flex;
+    background-color: grey;
+    max-width: 600px;
+    margin: auto;
+}
+
+.box1 {
+    flex: auto;
+    background-color: red;
+    text-align: center;
+}
+
+.box2 {
+    flex: auto;
+    background-color: yellow;
+    text-align: center;
+}
+
+.box3 {
+    flex: auto;
+    background-color: blue;
+    text-align: center;
+}
