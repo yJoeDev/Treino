@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 600px;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.box1 {
+    flex: auto;
+    background-color: red;
+    text-align: center;
+    min-height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.box2 {
+    flex: auto;
+    background-color: blue;
+    text-align: center;
+    min-height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.box3 {
+    flex: auto;
+    background-color: yellow;
+    text-align: center;
+    min-height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        
+        flex-direction: column;
+    }
+
+    .box1 {
+        background-color: darkred;
+    }
+
+    .box2 {
+        background-color: darkblue;
+    }
+
+    .box3 {
+        background-color: darkgoldenrod;
+    }
+}
