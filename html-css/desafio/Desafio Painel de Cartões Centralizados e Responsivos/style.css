@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse ;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    background: beige;
+    padding: 10px;
+    gap: 10px;
+}
+
+/*Layout 1 
+    flex-direction: row; (eixo principal da esquerda para direita)
+    justify-content: space-evenly; (distribui os itens com espacamentos iguais)
+    align-items: center; (centraliza os itens no eixo transversal)   
+*/
+
+/* Layout 2
+    flex-direction: column ; (eixo principal de cima para baixo)
+    justify-content: space-between; (espaca os elementos por igual deixando o principal no inicio e ultimo no final) 
+    align-items: flex-start; (alinha os itens no inicio do eixo tranversal)
+*/
+
+/* Layout 3
+    flex-direction: row-reverse ; (eixo principal da direita para esquerda)
+    justify-content: flex-end; (alinha todos os itens no final do eixo principal)
+    align-items: flex-end; (alinha todos os itens no final do eixo transversal)
+*/
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 2em;
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    font-size: 2em;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    font-size: 2em;
+}
+
+
+.box4 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 2em;
+}
+
+.box5 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    font-size: 2em;
+}
+
+.box6 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    font-size: 2em;
+}
