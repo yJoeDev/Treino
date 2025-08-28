@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+main {
+   width: 700px;
+   height: 500px;
+   display: flex;
+   flex-flow: row wrap;
+   align-content: flex-start;
+   justify-content:flex-start;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: grey;
+   padding: 10px;
+   gap: 10px;
+}
+
+
+/*align-content: space-evenly; (distribui linhas com espacamento exatamente iguais*/
+
+/*align-content: space-between; (distribui linhas com espaco igual entre elas deixando a primeira no inicio e ultima no final */
+
+/*align-content: space-around; (coloca os itens na area demarcada e centraliza eles*/
+
+/*Layout1 
+   flex-flow: row wrap;
+   align-content: space-around;
+   justify-content: flex-end;
+*/
+
+/* Layout2 
+   flex-flow: row wrap;
+   align-content: space-between;
+   justify-content:center
+*/
+
+/*Layout3 
+   flex-flow: row wrap;
+   align-content: flex-start;
+   justify-content:flex-start;
+*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: yellow;
+}
+
+.box3 {
+    background-color: green;
+}
+
+.box4 {
+    background-color: blue;
+}
+
+.box5 {
+    background-color: pink;
+}
+
+.box6 {
+    background-color: purple;
+}
+
+.box7 {
+    background-color: tomato;
+}
+
+.box8 {
+    background-color: violet;
+}
+
+.box9 {
+    background-color: goldenrod;
+}
+
+.box10 {
+    background-color: slateblue;
+}
+
+.box11 {
+    background-color: salmon;
+}
+
+.box12 {
+    background-color: saddlebrown;
+}
+
+.box13 {
+    background-color: papayawhip;
+}
+
+.box14 {
+    background-color: bisque;
+}
+
+.box15{
+    background-color: orange;
+}
