@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio painel flex diferentao</title>
+    <style>
+        main {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 400px;
+            background-color: beige;
+        }
+
+        .caixa1 {
+            order: 1;
+            background-color: purple;
+        }
+        
+        .caixa2 {
+            align-self: flex-start;
+            background-color: yellow;
+        }
+
+        .caixa3 {
+            order: -1;
+            background-color: green;
+        }
+
+        .caixa4 {
+            align-self: flex-end;
+            background-color: blue;
+        }
+
+        .caixa5 {
+            align-self: stretch;
+            background-color: red;
+        }
+
+        .caixa6 {
+            align-self: auto;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="caixa1">1</div>
+        <div class="caixa2">2</div>
+        <div class="caixa3">3</div>
+        <div class="caixa4">4</div>
+        <div class="caixa5">5</div>
+        <div class="caixa6">6</div>
+    </main>
+</body>
+</html>
