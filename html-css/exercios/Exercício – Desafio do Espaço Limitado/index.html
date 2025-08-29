@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio desafio do espaco limitado</title>
+    <style>
+        main {
+            width: 400px;
+            display: flex;
+            flex-flow: row nowrap;
+            border: 2px solid black;
+        }
+
+        /*O que acontece quando a soma dos conteúdos + a caixa de 200px passa do limite de 400px?
+        R:nada nao acontece quebra nem uma so a caixa 4 q fico com largura no eixo principal de 200px
+        */
+
+        /*Qual item sofre mais para se adaptar?
+        R:nem um nao ouve adaptacao no container em relacao aos itens e nem no item q foi configurado com flex-basis
+        */
+
+        .caixa1 {
+            flex-basis: auto;
+            background: red;
+        }
+
+        .caixa2 {
+            flex-basis: auto;
+            background-color: blue;
+        }
+
+        .caixa3 {
+            flex-basis: auto;
+            background-color: green;
+        }
+
+        .caixa4 {
+            flex-basis: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="caixa1">1</div>
+        <div class="caixa2">2</div>
+        <div class="caixa3">3</div>
+        <div class="caixa4">4</div>
+    </main>
+</body>
+</html>

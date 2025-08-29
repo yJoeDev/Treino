@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica guiada-flex-basis</title>
+    <style>
+        
+
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 600px;
+            border: 2px solid black;
+        }
+
+        .caixa1 {
+            flex-basis: 150px;
+            background-color: red;
+            order: 1;
+        }
+
+        .caixa2 {
+            flex-basis: 150px;
+            background-color: blue;
+        }
+
+        .caixa3 {
+            flex-basis: 150px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="caixa1">1</div>
+        <div class="caixa2">2</div>
+        <div class="caixa3">3</div>
+    </main>
+</body>
+</html>
