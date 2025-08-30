@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio flex-shrink e flex-grow</title>
+    <style>
+        main {
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .lutador1 {
+            align-self: flex-start;
+            flex-basis: 200px;
+            flex-grow: 3;
+            flex-shrink: 0;
+            background-color: red;
+        }
+
+        .lutador2 {
+            align-self: flex-end;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: blue;
+        }
+
+        .lutador3 {
+            align-self: center;
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 2;
+            background-color: green;
+        }
+
+        .lutador4 {
+            align-self: auto;
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="lutador1">A</div>
+        <div class="lutador2">B</div>
+        <div class="lutador3">C</div>
+        <div class="lutador4">D</div>
+    </main>
+</body>
+</html>

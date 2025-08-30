@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica guiada flex-grow e flex-shrink</title>
+    <style>
+        main {
+            width: 400px;
+            height: 200px;
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: tomato;
+        }
+
+        .caixa1 {
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 2;
+            background-color: red;
+        }
+
+        .caixa2 {
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;
+            background-color: blue;
+        }
+
+        .caixa3 {
+            flex-basis: 200px;
+            background-color: green;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        /*layout1 flex-grow: 1; todos os itens tem o mesmo espaco dividido */
+        /*layout2 flex-grow: 2; a primeira caixa o dobro do tamnaho das caixa 2 e 3 */
+        /*layout3 width: 400px; e flex-shrink: 2; caixa1, flex-shrink: 1; caixa2 a primeira caixa reduziu o dobro do tamaho da segunda caixa  */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="caixa1">A</div>
+        <div class="caixa2">B</div>
+        <div class="caixa3">C</div>
+    </main>
+</body>
+</html>
