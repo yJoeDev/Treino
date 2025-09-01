@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: beige;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.caixa1, .caixa2, .caixa3 {
+    background-color: tomato;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.caixa1 {
+    background-color: red;
+    flex: 3;
+}
+
+.caixa2 {
+    background-color: blue;
+    flex: 1;
+}
+
+.caixa3 {
+    background-color: green;
+    flex: 1;
+}
+
+/*flex: initial; nao teve alteracao nem uma no navegador mais de acordo com a descricao desse valor o conteudo pode encolher de acordo com o tamanho do container mais nao pode crecer*/
+
+/*flex: none; tambem nao teve alteracoes visuais no navegador mas de acordo com a decricao desse valor o tamanho e fixo nao crece nem encolhe q pode acabar gerando estoramento */
+
+/*flex: auto; teve uma alteracao direta no navegador as caixas se adapitarao ao tamanho do container preenchendo todo espaco disponivel */
+
+/*.caixa1 {
+    background-color: red;
+    flex: 3;
+}
+.caixa2 {
+    background-color: blue;
+    flex: 1;
+}
+.caixa3 {
+    background-color: green;
+    flex: 1;
+
+    a primeira caixa fico maior as outras e tomou mais espaco q as outras no caso ela creceu mais isso e um resultado pelo proporcional ao espaco restante
+*/

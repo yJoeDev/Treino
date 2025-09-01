@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.caixa1,.caixa2,.caixa3,.caixa4 {
+    background-color: tomato;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.caixa1 {
+    flex: 2;
+}
+
+.caixa2 {
+    flex: 1;
+}
+
+.caixa3 {
+    flex: none;
+}
+
+.caixa4 {
+    flex: auto;
+}
