@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+main {
+    /*tirei o width e height para poder observar a interacao no navegador para q eu possa conprender com mais clareza como q funciona os atributos */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: beige;
+}
+
+.lutador1 {
+    background-color: red;
+    order: -1;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.lutador2 {
+    background-color: blue;
+    order: 0;
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.lutador3 {
+    background-color: green;
+    order: 1;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 3;
+}
+
+.lutador4 {
+    background-color: yellow;
+    order: 0;
+    flex-basis: 250px;
+    flex-shrink: 2;
+    flex-grow: 0;
+}
+
+.lutador5 {
+    background-color: purple;
+    order: 0;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    align-self: flex-start;
+}
+
+.lutador6 {
+    background-color: orange;
+    order: 0;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    align-self: auto;
+}
