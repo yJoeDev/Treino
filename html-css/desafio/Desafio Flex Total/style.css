@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1000px;
+    height: 300px;
+    border: 2px solid black;
+    gap: 10px;
+    background-color: beige;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.caixa1 {
+    flex: 2;
+    order: 2;
+    background-color: red;
+    align-self: flex-start;
+}
+
+.caixa2 {
+    flex: 1;
+    order: 1;
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.caixa3 {
+    flex: none;
+    order: -2;
+    background-color: purple;
+    align-self: center;
+}
+
+.caixa4 {
+    flex: auto;
+    order: 0;
+    background-color: yellow;
+    align-self: auto;
+}
+
+.caixa5 {
+    flex: initial;
+    order: -3;
+    background-color: green;
+    align-self: flex-start;
+}
+
+/*A caixa q fica maior em questao de largura e primeira caixa a numero 1  a caixa 4 e 5 tem o mesmo tamanho */
+
+/*flex: initial; o tamanho e baseado no conteudo porem ele nao cresce mas pode encolher */
+
+/*flex: auto; a caixa se adapita o tamanho do container entao ela pode crescer e diminuir */
+
+/*flex: none; nao aumenta nem diminui a caixa ela se torna nao flexivel*/
