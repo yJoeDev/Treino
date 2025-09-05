@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+main {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.item1 {
+    background-color: blue;
+}
+
+.item2 {
+    background-color: red;
+}
+
+.item3 {
+    background-color: yellow;
+}
+
+.item4 {
+    background-color: tomato;
+}
+
+.item5 {
+    background-color: purple;
+}
+
+.item6 {
+    background-color: orange;
+}
+
+.item7 {
+    background-color: pink;
+}
+
+.item8 {
+    background-color: maroon;
+}
+
+.item9 {
+    background-color: magenta;
+}
+
+/*align-items: start;
+justify-items: start;*/
+
+/*align-items: center;
+justify-items: center;*/
+
+/*align-content: space-evenly;
+justify-content: space-evenly;*/

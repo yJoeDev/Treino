@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+main {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px dashed #000000;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+/*align-items: stretch; (Valor padrao mas interacao q teve foi q os conteudos se espandiram na vertical para ocuparem o espaco do item*/
+
+/*align-items: start; (os conteudos colaram na parte superior do item)*/
+
+/*align-items: end; (os conteudos colaram na parte inferior do item )*/
+
+/*align-items: center; (os conteudo centralizaram no item de forma vertical)*/
+
+/*justify-items: stretch; (Valor padrao mas a interacao q teve foi q os conteudos se espandiram na horizontal para ocupar o espaco do item)*/
+
+/*justify-items: start; (os conteudos colaram na parte lateral esquerda do item)*/
+
+/*justify-items: end; (os conteudos colaram na parte lateral direita dos itens)*/
+
+/*justify-items: center; (os conteudos centralizaram no eixo horizontal do item )*/
+
+/*align-content: stretch; (Valor padrão. As linhas do grid se esticam para preencher todo o espaço vertical)*/
+
+/*align-content: start; (As linhas ficam coladas na parte superior do container.)*/
+
+/*align-content: end; (As linhas ficam coladas na parte inferior do container.)*/
+
+/*align-content: center; (As linhas ficam coladas na parte
+inferior do container.)*/
+
+/*align-content: space-between; (distribui linhas igualmente com apenas espaco entre elas e cola o primeiro conteudo no top do container e ultimo conteudo no fim do container */
+
+/*align-content: space-evenly; (Distribui as linhas com espaços iguais entre elas e também nas bordas do container dessa vez a linha nao colou na borda do container)*/
+
+/*align-content: space-around; (Distribui as linhas com espaços iguais entre elas, mas metade do espaço nas bordas)*/
+
+/*justify-content: stretch; (Valor padrão. As colunas do grid se esticam para preencher todo o espaço horizontal.)*/
+
+/*justify-content: start; (As colunas ficam coladas na parte esquerda do container.*/
+
+/*justify-content: end; (As colunas ficam coladas na parte direita do container.)*/
+
+/*justify-content: center; (As colunas ficam centralizadas horizontalmente no container.)*/
+
+/*justify-content: space-between; (Distribui as colunas igualmente, com espaço apenas entre elas (sem espaço nas bordas).)*/
+
+/*justify-content: space-evenly; (Distribui as colunas com espaços iguais entre elas e também nas bordas do container.)*/
+
+/*justify-content: space-around; (Distribui as colunas com espaços iguais entre elas, mas metade do espaço nas bordas.)*/
+
+
+.item1 {
+    background-color: red;
+}
+
+.item2 {
+    background-color: blue;
+}
+
+.item3 {
+    background-color: yellow;
+}
+
+.item4 {
+    background-color: pink;
+}
+
+.item5 {
+    background-color: purple;
+}
+
+.item6 {
+    background-color: green;
+}
