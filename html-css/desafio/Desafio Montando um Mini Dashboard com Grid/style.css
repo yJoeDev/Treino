@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+main {
+    display: grid;
+    grid-template: 200px 1fr 1fr / auto auto;
+    grid-auto-rows: 120px;
+    place-items: center;
+    place-content: space-evenly;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+/*Testado place-items: center;*/
+
+/*Testado place-items: end start;*/
+
+/*Testado place-content: center;*/
+
+/*Testado place-content: space-evenly;*/
+
+.caixa1 {
+    background-color: red;
+}
+
+.caixa2 {
+    background-color: blue;
+}
+
+.caixa3 {
+    background-color: yellow;
+}
+
+.caixa4 {
+    background-color: green;
+}
+
+.caixa5 {
+    background-color: purple;
+}
+
+.caixa6 {
+    background-color: pink;
+}
+
+.caixa7 {
+    background-color: tomato;
+}
+
+.caixa8 {
+    background-color: bisque;
+}
