@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio operadores na vida real</title>
+</head>
+<body>
+    
+    <script>
+        let preco = Number(window.prompt('Preco do produto: '))
+        let quantidade = Number(window.prompt('Quantidade de produto: '))
+        let total = preco * ++quantidade
+        let acrecimo = total + 5
+        let divisao = acrecimo % 2
+        let desconto = acrecimo * 0.10
+        let valorComDesconto = acrecimo - desconto
+        document.write(`Total da compra com o de ${desconto} valor: ${valorComDesconto}`)
+    </script>
+</body>
+</html>
