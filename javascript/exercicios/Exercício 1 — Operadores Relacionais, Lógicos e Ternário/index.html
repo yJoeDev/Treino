@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao operadores</title>
+</head>
+<body>
+    
+    <script>
+        var idade = Number(window.prompt('Qual a sua idade? '))
+        var idoso = idade >= 60
+        var respota = idoso? 'idoso': 'jovem '
+        document.write(`${idade < 18? 'voce e menor de idade e ': 'Voce e maior de idade e '}`)
+        document.write(`${idade <= 18? 'Voce e jovem': respota}`)
+        document.write(`${idade >= 18? 'e pode dirigir': 'e nao pode dirigir'}`)
+    </script>
+</body>
+</html>

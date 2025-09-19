@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao sobre DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <p>sobre a minha vida chata e pacata</p>
+    <p class="sobre">sobre qualquer coisa q envolva uma musica boa</p>
+    <div name="caixa"></div>
+
+    <script>
+        var corpo = window.document.body
+        var laele = window.document.getElementById('titulo')
+        laele.innerText = 'Mestrado'
+        var vida = window.document.getElementsByTagName('p')[0]
+        vida.innerHTML = 'sobre a minha <strong>vida</strong> chata e pacata'
+        var musica = window.document.querySelector('p.sobre')
+        musica.innerHTML = 'algo diferente'
+        var caixinhas = window.document.getElementsByName('caixa')[0]
+        caixinhas.style.background = 'red'
+        caixinhas.style.width = '200px'
+        caixinhas.style.height = '100px'
+    </script>
+</body>
+</html>

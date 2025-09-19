@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio lista de compras</title>
+</head>
+<body>
+    <h2 id="compras">Lista de Compras</h2>
+    <ul>
+        <li class="p1">Arroz</li>
+        <li id="p2">Feijao</li>
+        <li class="p3">Macarrao</li>
+    </ul>
+
+    <script>
+        var corpo = window.document.body
+        var primeiro = window.document.getElementsByClassName('p1')[0]
+        primeiro.innerHTML = 'Salada'
+        var segundo = window.document.querySelector('li#p2')
+        segundo.innerHTML = 'Feijao preto'
+        var terceiro = window.document.querySelectorAll('li.p3')[0]
+        terceiro.innerHTML = 'Carne'
+        var lista = window.document.getElementById('compras')
+        lista.innerText = 'Minha lista de Compras Atualizada'
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Ola, Mundo!</h1>
+    <p class="paragrafo">um Paragrafo qualquer</p>
+    <p class="paragrafo">Outro texto</p>
+    <div name="caixa"></div>
+
+    <script>
+        let corpo = window.document.body
+        let t = window.document.getElementById('titulo')
+        t.innerText = 'Esse e o Titulo'
+        let paragrafo = window.document.getElementsByClassName('paragrafo')[0]
+        paragrafo.innerHTMl = '<strong>Qualquer coisa...</strong>'
+        let Caixa = window.document.getElementsByName('caixa')
+        Caixa[0].style.background = 'red'
+        let primeiroP = window.document.querySelector('p.paragrafo')
+        primeiroP.innerHTML = 'Mudando novamente'
+        let segundoP = window.document.querySelectorAll('p.paragrafo')[1]
+        segundoP.innerHTML = 'Mudando o segundo paragrafo '
+    </script>
+</body>
+</html>
