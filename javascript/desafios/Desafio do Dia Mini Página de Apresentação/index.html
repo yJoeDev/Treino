@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio sobre seletores DOM</title>
+</head>
+<body>
+    <h1 id="bemvindo">Bem-vindo</h1>
+    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea sint quasi nihil ipsa provident hic, libero, sunt quisquam commodi, nostrum dolorum omnis? Vel exercitationem ut, veritatis quia assumenda quam est!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores exercitationem amet ab, odio aperiam mollitia ullam corrupti tenetur libero atque. Omnis necessitatibus deleniti unde quo quos ea repellat sit veniam.</p>
+    <div name="caixa"></div>
+
+    <script>
+        var nome = window.prompt('Qual e seu nome? ')
+        var corpo = window.document.body
+        var site = window.document.getElementById('bemvindo')
+        site.innerText = `bem vindo(a) ao meu site! ${nome}`
+        var negrito = window.document.getElementsByClassName('info')[0]
+        negrito.innerHTML = '<strong>Lorem ipsum dolor</strong> sit amet consectetur, adipisicing elit. Ea sint quasi nihil ipsa provident hic, libero, sunt quisquam commodi, nostrum dolorum omnis? Vel exercitationem ut, veritatis quia assumenda quam est!'
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.innerText = 'Qual quer coisa q seja nao sei enventar texto do nada'
+        var caixinha = window.document.getElementsByName('caixa')[0]
+        caixinha.style.background = 'red'
+        caixinha.style.width = '150px'
+        caixinha.style.height = '150px'
+        caixinha.style.borderRadius = '20px'
+        caixinha.style.boxShadow = '0px 0px 10px black'
+        caixinha.style.display = 'flex'
+        caixinha.style.justifyContent = 'center'
+        caixinha.style.alignItems = 'center'
+    </script>
+</body>
+</html>
