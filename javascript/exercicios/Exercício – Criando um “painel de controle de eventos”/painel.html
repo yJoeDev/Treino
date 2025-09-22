@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercio painel de controle</title>
+</head>
+<body>
+    <input type="button" value="iniciar" id="iniciar">
+    <input type="button" value="parar" id="parar">
+    <input type="reset" value="limpar" id="limpar">
+
+    <div id="caixa">
+        coisas...
+    </div>
+    <script>
+        var inicio = window.document.getElementById('iniciar')
+        inicio.addEventListener('click', iniciado)
+        inicio.addEventListener('mouseenter', entrou)
+        var parado = window.document.getElementById('parar')
+        parado.addEventListener('click', parou)
+        parado.addEventListener('mouseenter', entrou)
+        var limpo = window.document.getElementById('limpar')
+        limpo.addEventListener('click', mudou)
+        limpo.addEventListener('mouseenter', entrou)
+        var coisas = window.document.getElementById('caixa')
+        coisas.style.background = 'grey'
+        coisas.style.width = '200px'
+        coisas.style.height = '200px'
+
+        function iniciado(){
+            var coisas = window.document.getElementById('caixa') 
+            coisas.innerText = 'INICIADO!'
+        }
+
+        function entrou(){
+            inicio.style.background = 'red'
+            parado.style.background = 'blue'
+            limpo.style.background = 'yellow'
+        }
+
+        function parou(){
+            var coisas = window.document.getElementById('caixa')
+            coisas.innerText = 'PARAR'
+        }
+
+        function mudou(){
+            var coisas = window.document.getElementById('caixa')
+            coisas.innerHTML = 'LIMPO!'
+        }
+
+    </script>
+</body>
+</html>
