@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio sobre funcoes e eventos</title>
+</head>
+<body>
+    <h1>Carteira de motorista CNH</h1>
+    Qual e sua idade? <input type="number" name="idade" id="idade">
+    <input type="button" value="resultado" id="resultado" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+    <div id="caixa"></div>
+
+    <script>
+        function clicar(){
+            var idade = window.document.getElementById('idade')
+            var caixa = window.document.getElementById('caixa')
+            var anos = Number(idade.value)
+            if (anos >= 18) {
+                caixa.innerHTML = '<p>Voce e de maior</p>'
+                caixa.innerHTML +=  `Com a idade de ${anos} ja pode dirigir`
+            } else {
+                caixa.innerHTML = 'Voce e de menor'
+                caixa.innerHTML += `Com a idade de ${anos} nao pode dirigir`
+            }
+        }
+
+        function entrar(){
+            var resultado = window.document.getElementById('resultado')
+            resultado.style.background = 'red'
+        }
+
+        function saiu(){
+            var resultado = window.document.getElementById('resultado')
+            resultado.style.background = 'white'
+        }
+    </script>
+</body>
+</html>
