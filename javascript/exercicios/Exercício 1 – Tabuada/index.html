@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio tabuada</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        var numero = Number(window.prompt('Digite um numero: '))
+        var tabuada = 1
+        if(numero <= 0){
+            window.alert('Numero invalido')
+        }
+        while(tabuada <= 10){
+            var conta = numero*tabuada
+            document.write(`O resultado da tabuada do ${numero} e : ${conta} <br>`)
+            tabuada++
+        }
+        */
+
+        var numero = Number(window.prompt('digite um numero: '))
+        var tabuada = 1
+        if(numero <= 0){
+            window.alert('Numero invalido')
+        }
+        do{
+            var conta = numero*tabuada
+            document.write(`O resultado da tabuada do ${numero} e : ${conta} <br>`)
+            tabuada++
+        } while(tabuada <= 10)
+    </script>
+</body>
+</html>

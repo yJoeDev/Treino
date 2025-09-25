@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem regressiva</title>
+</head>
+<body>
+    
+    <script>
+        var numero = Number(window.prompt('Digite um numero:'))
+        /*
+        if(numero == 0){
+            window.alert('Numero invalido')
+        }
+        while(numero >= 1){
+            document.writeln(`Contagem regressiva ${numero}`)
+            numero--
+        }
+        */
+        if(numero == 0 ){
+            window.alert('Numero invalido')
+        }
+        do{
+            document.write(`Contagem regressiva ${numero}`)
+            numero--
+        }while(numero >= 1)
+    </script>
+</body>
+</html>
