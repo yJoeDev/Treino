@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de numeros pares</title>
+</head>
+<body>
+    
+    <script>
+        var numero = Number(window.prompt('Digite um numero: '))
+        var par = 2
+        if(numero <= 0){
+            window.alert('Numero invalido!')
+        }
+        while(par <= numero){
+            document.write(`Contagem numeros pares ${par}`)
+            par += 2
+        }
+    </script>
+</body>
+</html>
