@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo de Advinha</title>
+</head>
+<body>
+    
+    <script>
+        var numeroSec = 15
+        var palpite = 1
+        while(palpite != numeroSec){
+            palpite = Number(window.prompt('Digite um numero: '))
+        if(palpite < numeroSec){
+            window.alert('Tente novamente com um numero maior')
+        } else if (palpite > numeroSec){
+            window.alert('Tente novamente com um numero menor')
+        } else {
+            document.write('Parabens, Voce acertou o numero!')
+        }
+        }
+    </script>
+</body>
+</html>
