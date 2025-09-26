@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de login e menu</title>
+</head>
+<body>
+    <script>
+        var aluno = 'aluno'
+        var sen = 'pratica'
+        do{
+            var log = window.prompt('Digite seu nome de login:')
+            var senha = window.prompt('Digite sua senha: ')
+            if(log != aluno || senha != sen){
+                window.alert('Acesso negado.tente novamente')
+            }
+        }while(aluno != log || sen != senha)
+        var opcao = 0
+        while(opcao != 2){
+            opcao = window.prompt('Menu:\n[1] Ver Status\n[2] Sair\nDigite sua opacao: ')
+            opcao = parseInt(opcao)
+            if(opcao == 1){
+                window.alert('Status ok.')
+            } else if(opcao == 2){
+                window.alert('Saindo do sistema...')
+            } else {
+                window.alert('Opacao invalida. Escolha 1 ou 2')
+            }
+        }
+    </script>
+</body>
+</html>
