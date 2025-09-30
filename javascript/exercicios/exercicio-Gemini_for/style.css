@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div#pares {
+    background-color: lightblue;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+}
